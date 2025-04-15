@@ -1,0 +1,70 @@
+<!-- Header Component -->
+<header class="container-fluid bg-white py-3">
+    <div class="row align-items-center">
+        <div class="col-lg-3">
+            <a href="/" class="d-flex align-items-center">
+                <img src="/assets/img/logo.png" alt="Peston İlaçlama" class="img-fluid" style="max-height: 60px;">
+                <h1 class="m-0 ms-2 text-primary">Peston İlaçlama</h1>
+            </a>
+        </div>
+        <div class="col-lg-9">
+            <div class="d-flex justify-content-end align-items-center">
+                <div class="contact-info me-4">
+                    <i class="fas fa-phone-alt text-primary me-2"></i>
+                    <span>444 XX XX</span>
+                </div>
+                <div class="contact-info me-4">
+                    <i class="fab fa-whatsapp text-primary me-2"></i>
+                    <span>0532 XXX XX XX</span>
+                </div>
+                <a href="/pages/teklif-al.html" class="btn btn-primary px-4 py-2">
+                    <i class="fas fa-clipboard-list me-2"></i>Ücretsiz Keşif
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<script>
+    // Header için gerekli JavaScript kodları
+    document.addEventListener('DOMContentLoaded', function() {
+        // Scroll olduğunda header'ı sabit yap
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('fixed-top', 'shadow-sm');
+            } else {
+                header.classList.remove('fixed-top', 'shadow-sm');
+            }
+        });
+    });
+</script>
+
+<!-- Topbar Start -->
+<div class="container-fluid bg-light p-0">
+    <div class="row gx-0 d-none d-lg-flex">
+        <div class="col-lg-7 px-5 text-start">
+            <div class="h-100 d-inline-flex align-items-center me-4">
+                <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                <small>İstanbul, Türkiye</small>
+            </div>
+            <div class="h-100 d-inline-flex align-items-center">
+                <small class="far fa-clock text-primary me-2"></small>
+                <small>Pzt - Cmt : 09.00 - 18.00</small>
+            </div>
+        </div>
+        <div class="col-lg-5 px-5 text-end">
+            <div class="h-100 d-inline-flex align-items-center me-4">
+                <small class="fa fa-phone-alt text-primary me-2"></small>
+                <small>+90 555 123 45 67</small>
+            </div>
+            <div class="h-100 d-inline-flex align-items-center mx-n2">
+                <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-square btn-link rounded-0" href=""><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Topbar End --> 

@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://peston.com.tr/sitemap.xml
+
+# Önemli sayfalar
+Allow: /hizmetler/
+Allow: /bolgeler/
+Allow: /teklif-al
+Allow: /iletisim
+
+# Özel arama motorları
+Allow: /googlebot
+Allow: /bingbot
+Allow: /yandexbot 

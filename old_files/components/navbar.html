@@ -1,0 +1,51 @@
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+    <a href="../pages/index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <h2 class="m-0 text-primary">Peston İlaçlama</h2>
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="../pages/index.html" class="nav-item nav-link">Ana Sayfa</a>
+            <a href="../pages/hakkimizda.html" class="nav-item nav-link">Hakkımızda</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Hizmetlerimiz</a>
+                <div class="dropdown-menu fade-up m-0">
+                    <a href="../pages/hizmetler/ev-ilaclama.html" class="dropdown-item">Ev İlaçlama</a>
+                    <a href="../pages/hizmetler/is-yeri-ilaclama.html" class="dropdown-item">İş Yeri İlaçlama</a>
+                    <a href="../pages/hizmetler/apartman-ilaclama.html" class="dropdown-item">Apartman İlaçlama</a>
+                    <a href="../pages/hizmetler/hasereler.html" class="dropdown-item">Haşere Türleri</a>
+                </div>
+            </div>
+            <a href="../pages/teklif-al.html" class="nav-item nav-link">Teklif Al</a>
+            <a href="../pages/iletisim.html" class="nav-item nav-link">İletişim</a>
+        </div>
+        <a href="../pages/teklif-al.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Hemen Teklif Al<i class="fa fa-arrow-right ms-3"></i></a>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+<script>
+    // Aktif menü öğesini işaretle
+    document.addEventListener('DOMContentLoaded', function() {
+        const currentPath = window.location.pathname;
+        document.querySelectorAll('.nav-link').forEach(link => {
+            if (link.getAttribute('href') === currentPath) {
+                link.classList.add('active');
+            }
+        });
+
+        // Dropdown menüler için hover efekti
+        document.querySelectorAll('.nav-item.dropdown').forEach(dropdown => {
+            dropdown.addEventListener('mouseover', function() {
+                this.querySelector('.dropdown-menu').classList.add('show');
+            });
+            
+            dropdown.addEventListener('mouseleave', function() {
+                this.querySelector('.dropdown-menu').classList.remove('show');
+            });
+        });
+    });
+</script> 

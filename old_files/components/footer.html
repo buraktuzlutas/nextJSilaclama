@@ -1,0 +1,80 @@
+<!-- Footer Component -->
+<footer class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-white mb-4">Kurumsal</h5>
+                <a class="btn btn-link text-white-50" href="/pages/hakkimizda.html">Hakkımızda</a>
+                <a class="btn btn-link text-white-50" href="/pages/iletisim.html">İletişim</a>
+                <a class="btn btn-link text-white-50" href="/pages/hizmetler.html">Hizmetlerimiz</a>
+                <a class="btn btn-link text-white-50" href="/pages/kvkk.html">KVKK</a>
+                <a class="btn btn-link text-white-50" href="/pages/cerez-politikasi.html">Çerez Politikası</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-white mb-4">Hizmetlerimiz</h5>
+                <a class="btn btn-link text-white-50" href="/pages/hizmetler/ev-ilaclama.html">Ev İlaçlama</a>
+                <a class="btn btn-link text-white-50" href="/pages/hizmetler/is-yeri-ilaclama.html">İş Yeri İlaçlama</a>
+                <a class="btn btn-link text-white-50" href="/pages/hizmetler/dezenfeksiyon.html">Dezenfeksiyon</a>
+                <a class="btn btn-link text-white-50" href="/pages/peyzaj/bahce-duzenleme.html">Bahçe Düzenleme</a>
+                <a class="btn btn-link text-white-50" href="/pages/peyzaj/sulama-sistemleri.html">Sulama Sistemleri</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-white mb-4">İletişim</h5>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>İstanbul, Türkiye</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>444 XX XX</p>
+                <p class="mb-2"><i class="fab fa-whatsapp me-3"></i>0532 XXX XX XX</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-white mb-4">Bülten</h5>
+                <p>Kampanya ve fırsatlardan haberdar olmak için bültenimize abone olun.</p>
+                <div class="position-relative mx-auto" style="max-width: 400px;">
+                    <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="E-posta adresiniz">
+                    <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Abone Ol</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="#">Peston İlaçlama</a>, Tüm Hakları Saklıdır.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-menu">
+                        <a href="/pages/index.html">Ana Sayfa</a>
+                        <a href="/pages/cerez-politikasi.html">Çerezler</a>
+                        <a href="/pages/yardim.html">Yardım</a>
+                        <a href="/pages/sss.html">SSS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Footer için gerekli JavaScript kodları
+    document.addEventListener('DOMContentLoaded', function() {
+        // Bülten aboneliği için form gönderimi
+        const subscribeButton = document.querySelector('.btn-primary');
+        const emailInput = document.querySelector('input[type="text"]');
+        
+        subscribeButton.addEventListener('click', function() {
+            const email = emailInput.value.trim();
+            if (email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                alert('Bülten aboneliğiniz alınmıştır. Teşekkür ederiz!');
+                emailInput.value = '';
+            } else {
+                alert('Lütfen geçerli bir e-posta adresi giriniz.');
+            }
+        });
+    });
+</script> 
